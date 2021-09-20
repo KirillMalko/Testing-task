@@ -20,3 +20,40 @@
  .hide{
      display: none;
  }
+.show{
+    display: block;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    background: red;
+}
+#\[84\]{
+    text-indent: 15px
+}
+#\[84\.1\]{
+    text-indent: 25px
+}
+#\[84\.11\]{
+    text-indent: 30px
+}
+#\[84\.11\.11\]{
+    text-indent: 40px
+}
+#\[84\.11\.11\.100\],
+#\[84\.11\.11\.200\],
+#\[84\.11\.11\.300\]
+{
+    text-indent: 50px
+}
+.\[84\.11\.11\]{
+    text-indent: 20px
+}
+
+select {
+    overflow-y: auto;
+}
+option{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}

@@ -1,3 +1,21 @@
+//
+//
+// for (let option of tree.querySelectorAll('option')) {
+//     let optgroup = document.createElement('optgroup');
+//     optgroup.classList.add('show');
+//     document.optgroup.before(optgroup)
+//    document.option.after(optgroup.nextSibling)
+// }
+// tree.onclick = function (event){
+//     if(event.target.tagName != span){
+//
+//     }
+// }
+
+// Создаём новый элемент div
+// и добавляем в него немного контента
+
+
 let data = {
     "id": "tree",
     "text": "input request",
@@ -52,6 +70,8 @@ let data = {
     ]
 }
 let openData = JSON.stringify(data)
+
+
 function foo() {
        let input = document.createElement("input");
        input.className = "newInput";
@@ -83,6 +103,45 @@ function  insertMark(string, pos, len){
     return string.slice(0, pos) + '<mark>' + string.slice(pos, pos + len) + '</mark>' + string.slice(pos + len );
 }
 
+
+
+    //****************************//////////////
+    document.querySelector('option')
+
+    let toggler = document.getElementsByClassName("box");
+    let i;
+
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("check-box");
+        });
+    }
+
+
+//****************************//
+
+    // <ul id="myUL">
+    //     <li><span className="box">Напитки</span>
+    //         <ul className="nested">
+    //             <li>Вода</li>
+    //             <li>Кофе</li>
+    //             <li><span className="box">Чай</span>
+    //                 <ul className="nested">
+    //                     <li>Черный чай</li>
+    //                     <li>Белый чай</li>
+    //                     <li><span className="box">Зеленый чай</span>
+    //                         <ul className="nested">
+    //                             <li>Сенча</li>
+    //                             <li>Гекуро</li>
+    //                             <li>Маття</li>
+    //                             <li>Пи Ло Чун</li>
+    //                         </ul>
+    //                     </li>
+    //                 </ul>
+    //             </li>
+    //         </ul>
+    //     </li>
 }
 
 
